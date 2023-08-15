@@ -10,3 +10,5 @@ for i in range(n):
 
 if n % w:
     print()
+
+#for문을 반복할 때마다 if 문을 실행하므로 효율적이지 않음
