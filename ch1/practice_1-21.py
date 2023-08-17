@@ -6,3 +6,5 @@ for i in range(1, 10):
         print(f'{i * j:3}', end='')
     print()
 print('-' * 27)
+
+#:3 -> 자세히 알아보기

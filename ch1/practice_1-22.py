@@ -1,8 +1,8 @@
-# 구구단 곱셈표 출력하기
+# 왼쪽 아래가 직각인 이등변 삼각형으로 * 출력하기
 
-print('-' * 27)
-for i in range(1, 10):
-    for j in range(1, 10):
-        print(f'{i * j:3}', end='')
+n = int(input('짧은 변의 길이를 입력하세요.: '))
+
+for i in range(n):
+    for j in range(i + 1):
+        print('*', end='')
     print()
-print('-' * 27)
