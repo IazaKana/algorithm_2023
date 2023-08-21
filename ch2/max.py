@@ -1,4 +1,5 @@
 # 시퀸스 원소의 최댓값 출력
+# practice_2-2
 
 from typing import Any, Sequence
 
