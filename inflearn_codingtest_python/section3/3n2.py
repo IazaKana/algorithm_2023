@@ -25,3 +25,5 @@ def solution(nums):
             answer = max(answer, key)
  
     return answer
+
+#Counter는 nums의 빈도수를 카운트 해줌
