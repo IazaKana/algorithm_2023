@@ -23,3 +23,6 @@ def solution(nums, target):
             if nums[i] + nums[j] == target:
                 return sorted([nums[i], nums[j]])
     return answer
+
+#sorted(리스트) - 본체 리스트는 내버려두고 정렬한 새로운 리스트를 반환
+#리스트.sort() - 본체의 리스트를 정렬해서 변환
