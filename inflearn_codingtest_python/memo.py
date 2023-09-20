@@ -3,3 +3,8 @@
 
 #2.배열과 연결리스트
 #2.2
+
+def cal(nums):
+    n = len(nums)
+    for i in range(n):
+        for j in range(2**n):
