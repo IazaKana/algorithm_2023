@@ -33,4 +33,6 @@ for i in range(n):
         result = False
 
     print('#' + str(i+1), str(a) + '/' + str(b) + '/' + str(c)) if result == True else print('#' + str(i+1), '-1')
+
+    #str input방법 숙지
     
