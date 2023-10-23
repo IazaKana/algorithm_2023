@@ -18,14 +18,15 @@ def BFS(home):
                     ch[nx] = 1
         L += 1
 
-def solution(home):
-    answer = BFS(home)
-    return answer
+# def solution(home):
+#     answer = BFS(home)
+#     return answer
 
-print(solution(10))
-print(solution(14))
-print(solution(25))
-print(solution(24))
-print(solution(345))
+print(BFS(10))
+print(BFS(345))
+# print(solution(14))
+# print(solution(25))
+# print(solution(24))
+# print(solution(345))
 
 # 최소~~문제 : BFS생각

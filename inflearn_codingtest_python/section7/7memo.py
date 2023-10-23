@@ -1,5 +1,10 @@
-from bisect import bisect_left, bisect_right
 def solution(nums, weight):
-    # answer = bisect_right(nums, weight)
-    # answer = bisect_left(nums, weight)
-    return answer
+    left = 0
+    right = len(nums)
+    while left < right:
+        mid = (left + right) // 2
+        if weight > nums[mid]:
+            left = mid + 1
+        else:
+            right = mid
+    return -1 if right == len(nums) else right
