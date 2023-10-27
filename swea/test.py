@@ -1,7 +1,3 @@
-from collections import deque
-A = deque()
-A.append(1)
-A.append(2)
-A.append(3)
-print(max(A))
-print(min(A))
+list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+print(list[i] for i in list)
