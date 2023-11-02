@@ -31,6 +31,3 @@ if check == 0:
         print(k)
 elif check == 1:
     print('NO')
-    
-
-
