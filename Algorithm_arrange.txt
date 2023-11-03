@@ -37,3 +37,39 @@
   chr(정수) - 하나의 정수를 인자로 받고 해당 정수에 해당하는 유니코드 문자를 반환
 
 7.절댓값 - abs(값)
+
+8.set() - 집합에 관련된 것을 쉽게 처리하기 위해 만든 자료형
+  s1 = set([1,2,3])
+  8-1.중복을 허용하지 않는다, 순서가 없다
+  8-2.집합
+    8-2-1.교집합
+    (ex)s3 = s1 & s2
+    s3 = s1.intersection(s2)
+    8-2-2.합집합
+    (ex)
+    s3 = s1 | s2
+    s3 = s1.union(s2)
+    8-2-3.차집합
+    s3 = s1 - s2
+    s3 = s1.difference(s2)
+  8-3.
+   8-3-1.값 1개 추가히기(add)
+   (ex)s1.add(4)
+   8-3-2.값 여러개 추가하기(update)
+   (ex)s1.update([4,5,6])
+   8-3-3.특정 값 제거하기(remove)
+   (ex)s1.remove(2)
+
+   set의 탐색, 삽입, 삭제의 시간복잡도는 O(1)
+
+9.sys.stdin.readline().strip() -> 개행 없애기
+
+10.haspmap(dictionary)
+  10.1 탐색(if key in map:, if value in map.values()) 삭제(d.pop(key)), 삽입(map[key] = value) => 시간복잡고 O(1)
+  10.2 
+
+11.defaultdict()
+  value를 지정하지 않은 key의 value를 0으로 가진다. 따라서 특정 키 존재여부는 0이 맞는지 아닌지로 알 수 있다.
+
+12.deque()
+  deque확장 -> extend(), extendleft()
