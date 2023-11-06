@@ -1,2 +1,4 @@
-A = [0] + [1, 2, 3]
-print(A)
+import sys
+input = sys.stdin.readline
+N = int(input())
+print(N)
