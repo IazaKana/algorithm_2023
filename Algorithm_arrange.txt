@@ -89,3 +89,18 @@
 17.딕셔너리 for문 선언
 
 --> 18.Counter()함수 정리
+
+19.우선순위 큐
+  데이터 추가는 어떤 순서로 해도 상관이 없지만 제거될 때는 가장 작은 값을 제거하는 독특한 특정을 지닌 자료구조
+  from queue import PriorityQueue
+  que = PriorityQueue()
+  우선순위 큐의 디폴트 사이즈는 무한대입니다. 만약에 특정 최대 크기를 가진 우선순위 큐가 필요하다면 maxsize를 넘기면 됨.
+  que = PriorityQueue(maxsize=9)
+  put()메서드 - 원소를 추가(log n)
+  get()메서드 - 원소를 삭제(log n)
+  단순 오름차순이 아닌 다른 기준으로 원소가 정렬되기를 원한다면 (우선순위, 값)의 튜플의 형태로 데이터를 추가하고 제거하면 됨.
+  que.put((3, 'Apple'))
+  que.put((1, 'Banana'))
+  que.put((2, 'Cherry'))
+
+  20.소수 -> 목표값의 제곱근값까지 에라토스테네스의 체로 연산(import math, math.sqrt(16))
