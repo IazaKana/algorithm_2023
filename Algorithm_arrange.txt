@@ -111,3 +111,44 @@
      최대공배수 -> (A*B) / 최대공약수
 
   23.[[]*2]*3 -> [[]*2 for _ in range(3)] 얕은 복사 주의
+
+  #inflearn_codingtest_python
+  2.deque - 시간복잡도 O(1)
+    from collections import deque
+    append() - 오른쪽 부분에 자료 추가, appendleft()
+    pop() - 오른쪽 자료 제거, popleft()
+
+  3.dictionary - key, value를 한 쌍으로 하는 값을 저장하는 자료 구조
+    sH = {'a': 3, 'b': 5, 'c': 2}
+    딕셔너리 key 탐색 - for key in sH: -> a, b, C
+    딕셔너리 value 탐색 - for val in sH.values(): -> 3, 5, 2
+    딕셔너리 key, value 동시 탐색 - for key, val in sH.items():
+    key in sH - 딕셔너리에 key가 있는지 확인해서 있으면 true, 없으면 false
+    def(sH[key]) - 딕셔너리의 key를 삭제
+    len(sH) - 딕셔너리의 키의 개수
+    특정값 찾기 - d['a']
+    추가하기 - d['d'] = 4
+    딕셔너리 키값들만 추출 - d.keys()
+    값만 추출 - d.values()
+    특정 키값 삭제 - del d['d']
+    모두 삭제 - d.clear()
+
+    from collections import Counter
+    리스트나 셋을 인자로 넘기면 각 항목을 키로 해서 개수를 알려준다.
+      상위요소 반환 - most_common(), key value값 출력
+      교집합 &, 합집합 |
+      카운터 숫자만큼 요소 반환 - elements()
+    dict = defaultdict(int)
+
+  4.시뮬레이션
+
+  5.sort함수
+    nums.sort()
+    nums.sort(reverse = True)
+    nums.sort(key = lambda v : (v[0])) -> [x, y]에서 x값에 의한 오름차순 정렬
+    nums.sort(key = lambda v : (v[1])) -> [x, y]에서 y값에 의한 오름차순 정렬
+    nums.sort(key = lambda v : (-v[0])) -> [x, y]에서 x값에 의한 내림차순
+    nums.sort(key = lambda v : (v[1], v[0])) -> [x, y]에서 y값에 의한 오름차순을 하되 y값이 같은 경우는 x값에 따라 오름차순
+
+    sorted(nums)
+    sorted(nums, reverse=True)
