@@ -112,7 +112,16 @@
 
   23.[[]*2]*3 -> [[]*2 for _ in range(3)] 얕은 복사 주의
 
-  #inflearn_codingtest_python
+24.진수 변환
+  24-1. 10진수 -> 2, 8, 16진수 변환
+  bin(), oct(), hex()
+  진법 표시를 지우려면 (ex)bin(10)[2:]
+  24-2. n진수 -> n진수
+  format(valub, '#b'):10진수 -> 2진수 변환하기
+  (ex)a = oct(314), print(int(a, 8)) -> 10진수 변환
+
+
+#inflearn_codingtest_python
   2.deque - 시간복잡도 O(1)
     from collections import deque
     append() - 오른쪽 부분에 자료 추가, appendleft()
@@ -152,3 +161,23 @@
 
     sorted(nums)
     sorted(nums, reverse=True)
+  
+  6.그리디
+
+  7.이진 탐색
+    추가 정리
+
+  8.스택, 큐
+    stack
+      pop() - 스택에서 가장 위에 있는 항목을 제거
+      stack[-1] - 가장 위에 있는 항목 확인
+    queue - fifo형식의 자료 구조
+
+  9.DFS
+
+  10.BFS
+
+  11.그래프
+
+
+#  
