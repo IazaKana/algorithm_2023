@@ -120,6 +120,19 @@
   format(valub, '#b'):10진수 -> 2진수 변환하기
   (ex)a = oct(314), print(int(a, 8)) -> 10진수 변환
 
+25.소수점
+  round(반올림하고자 하는 값, 자리수)
+  '이것을 문자열 {:.2f}'.format(실수입력)
+
+26.순열과 조합
+itertools.permutations(arr, 2) - arr안에 있는 서로 다른 n개 중 2개를 골라 순서를 정해 나열
+itertools.combinations(arr, 2) - 서로 다른 n개 중에서 2개를 취하여 조를 만들때
+from itertools import combinations
+
+zip() - 동일한 개수로 이루어진 iterable한 객체들을 인수로 받아서 묶어서 iterator로 반환
+all() - iterable한 객체를 인수로 받아서 원소가 모두 참이면 True 아니면 False를 반환
+any() - iterable한 객체를 인수로 받아서 원소가 하나라도 참이면 True 아니면 False를 반환
+chain() - iterable한 객체들을 인수로 받아 하나의 iterator로 반환
 
 #inflearn_codingtest_python
   2.deque - 시간복잡도 O(1)

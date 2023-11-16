@@ -12,6 +12,7 @@ for i in range(1, T+1):
         rate.append([c, b, a])
 
     rate.sort(key = lambda v : (-v[0], v[1]))
+    print(rate)
 
     for j in rate:
         if cal_check + j[1] <= L:
@@ -19,3 +20,9 @@ for i in range(1, T+1):
             cal_check += j[1]
 
     print('{}{} {}'.format('#', i, sum))
+
+#========================================
+
+t = int(input())
+
+
