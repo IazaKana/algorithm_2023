@@ -25,7 +25,7 @@
   lower() - 문자열을 소문자로 변환
   capitalize() - 맨 첫글자만 대문자로 변환하기
   title() - 문자열의 각 단어의 첫글자를 대문자로 변환
-  swapcase - 문자열에 있는 모든 문자의 대/소문자를 반대로 변환
+  swapcase() - 문자열에 있는 모든 문자의 대/소문자를 반대로 변환
 
 5.리스트의 insert()함수 - 원하는 위치에 값을 넣을 수 있다. (ex)list.insert(2, 3) -> 리스트의 2의 위치에 3이라는 값을 넣는다
   리스트의 index함수 - 특정값이 어느 위치에 있는지 확인하는 함수, list.index(값), 여러 개 있더라도 처음 찾은 값의 위치만 반환
@@ -65,7 +65,7 @@
 9.sys.stdin.readline().strip() -> 개행 없애기
 
 10.haspmap(dictionary)
-  10.1 탐색(if key in map:, if value in map.values()) 삭제(d.pop(key)), 삽입(map[key] = value) => 시간복잡고 O(1)
+  10.1 탐색(if key in map:, if value in map.values()) 삭제(d.pop(key)), 삽입(map[key] = value) => 시간복잡도 O(1)
   10.2 
 
 11.defaultdict()
@@ -128,6 +128,7 @@
 itertools.permutations(arr, 2) - arr안에 있는 서로 다른 n개 중 2개를 골라 순서를 정해 나열
 itertools.combinations(arr, 2) - 서로 다른 n개 중에서 2개를 취하여 조를 만들때
 from itertools import combinations
+list(map(''.foin.permutations(arr,2)))
 
 zip() - 동일한 개수로 이루어진 iterable한 객체들을 인수로 받아서 묶어서 iterator로 반환
 all() - iterable한 객체를 인수로 받아서 원소가 모두 참이면 True 아니면 False를 반환
@@ -144,6 +145,16 @@ N의 제곱근까지만 탐색
 3.리스트의 끝까지 2를 반복한 후 리스트에서 남아 있는 모든 수를 출력한다.
 
 29.list.count(카운트할 값)
+
+30.값 서로 바꾸기 한번에 -> A[i], A[j] = A[j], A[i]
+
+31.A = Apple
+A.lstrip('ap') => 'le' => 왼쪽으로 a, p의 문자열의 모든 조합 제거
+A.rstrip()
+A.strip('ae') => 양쪽 문자열에 공이나 인자가된 문자열의 모든 조합 제거 => 'ppl'
+set자료형에만 교집합, 합집합 존재
+
+32.
 
 #inflearn_codingtest_python
   2.deque - 시간복잡도 O(1)
@@ -228,5 +239,17 @@ N의 제곱근까지만 탐색
 
 #유형 정리
 1.소수 구하기 = > 에라토스테네스의 원리 사용
+prime = []
+for i in range(2, 1000) :
+    for j in range(2, i // 2 + 1) :
+        if i % j == 0 :
+            break
+    else :
+        prime.append(i)
 2.순열문제 - n개를 선택해서 연산한 수를 ~  => combinations사용
 3.palindrome문제
+4.소수점 문제
+  round(값, 자리수)
+  "{:nf}".format(실수입력)
+5.문자열반복문제
+6.이진 탐색(start, end)

@@ -1,2 +1,3 @@
 TC = int(input())
 
+G
