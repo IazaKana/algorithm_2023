@@ -9,7 +9,7 @@ def solution(nums, k):
 print(solution([3, 7, 1, 5, 9, 2, 8], 3))
 print(solution([2, 12, 2, 1, 3, 3, 9], 2))
 print(solution([1, 2, 5, 4, 6, 7, 9], 6))
-print(solution([1, 3, 6, 8, 14, 2, 1, 7], 5))\
+print(solution([1, 3, 6, 8, 14, 2, 1, 7], 5))
 
 #마지막에 리스트로 다시 변환하는 거 주의
 #pop한 번 하는 순간 o(n)
