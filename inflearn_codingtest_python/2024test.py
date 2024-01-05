@@ -1,3 +1,2 @@
-a = map(int, input().split())
-print(a)
-print(type(a))
+b = max(8, 0)
+print(b)
