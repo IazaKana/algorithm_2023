@@ -1,6 +1,3 @@
-import math
-
-y1 = int(3.6)
-y2 = int(3.1)
-
-print(y1, y2)
+a = [1, 2, 3, 4, 5, 6, 7]
+a = [a[:5]]
+print(a)
