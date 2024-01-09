@@ -1,4 +1,7 @@
-a = [3, 4]
-a.sort(reverse = True)
+from itertools import combinations, permutations
 
-print(a)
+numbers = [4, 10, 4]
+
+numbers = list(map(str, numbers))
+print(numbers)
+numbers.sort(key = lambda x : x*3, reverse = True)
