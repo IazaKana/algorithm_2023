@@ -1,6 +1,4 @@
-a = 5
-b = 6
+a = [3, 4]
+a.sort(reverse = True)
 
-a, b = b, a
-
-print(a, b)
+print(a)
