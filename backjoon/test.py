@@ -1,2 +1,2 @@
-a = (0, 'A')
-print(a[0], a[1], type(a[0]), type(a[1]))
+a = [[0] * 3 for _ in range(4)]
+print(a)
