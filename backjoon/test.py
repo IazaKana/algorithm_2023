@@ -1,2 +1,2 @@
-a = [[0] * 3 for _ in range(4)]
-print(a)
+a = set([1, 1, 2, 3])
+print(type(a))

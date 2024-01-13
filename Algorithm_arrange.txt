@@ -168,7 +168,7 @@ set자료형에만 교집합, 합집합 존재
     딕셔너리 value 탐색 - for val in sH.values(): -> 3, 5, 2
     딕셔너리 key, value 동시 탐색 - for key, val in sH.items():
     key in sH - 딕셔너리에 key가 있는지 확인해서 있으면 true, 없으면 false
-    def(sH[key]) - 딕셔너리의 key를 삭제
+    del(sH[key]) - 딕셔너리의 key를 삭제
     len(sH) - 딕셔너리의 키의 개수
     특정값 찾기 - d['a']
     추가하기 - d['d'] = 4
@@ -181,7 +181,7 @@ set자료형에만 교집합, 합집합 존재
     리스트나 셋을 인자로 넘기면 각 항목을 키로 해서 개수를 알려준다.
       상위요소 반환 - most_common(), key value값 출력
       교집합 &, 합집합 |
-      카운터 숫자만큼 요소 반환 - elements()
+      카운터 숫자만큼 요소 반환 - list(sh.elements())
     dict = defaultdict(int)
 
   4.시뮬레이션
@@ -239,6 +239,16 @@ set자료형에만 교집합, 합집합 존재
 
 #유형 정리
 1.소수 구하기 = > 에라토스테네스의 원리 사용
+def is_prime_number(x):
+    if x < 2:
+        return False
+    
+    for i in range(2, x):
+        if x % i == 0:
+            return False
+    
+    return True
+
 prime = []
 for i in range(2, 1000) :
     for j in range(2, i // 2 + 1) :
