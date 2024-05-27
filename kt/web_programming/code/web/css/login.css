@@ -19,7 +19,7 @@
 }
 
 .msg {
-    /* display: none; */
+    display: none;
     float: left; 
 /* float: left하면 height가 없어진다 */
     height: 0px;
