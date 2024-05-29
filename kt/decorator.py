@@ -81,3 +81,26 @@ def func1():
     print('code2')
 
 func1()
+
+#====================================
+
+# *args, **kwargs
+# parameter : 여러개의 argument를 하나의 parameter(tuple, dict)로 받는 방법
+# argument : 하나의 parameter(list, tuple, dict)를 여러개의 argument로 사용 방법
+
+# 식별자 1개, 데이터 n개 : 컬렉션 데이터타입
+
+def plus(*args): # parameter : 1개
+    print(type(args), args)
+    print(sum(args))
+
+plus(1, 2, 3, 4, 5) # args : 3개
+# argument의 개수의 상관없이 함수를 실행
+
+def plus(*args, **kwargs): # parameter : 1개
+    print(type(args), args)
+    print(type(kwargs), kwargs)
+    print(sum(args) + sum(kwargs.values()))
+
+plus(1, 2, 3, n4=10, n5=20) # args : 3개
+# tuple데이터 타입에서 받아줄 수 없는 키워드가 있는 argument는 **kwargs에서 받음
